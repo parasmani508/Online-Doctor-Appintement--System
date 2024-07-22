@@ -1,1 +1,7 @@
-config.env
+   # Ignore node_modules
+   node_modules/
+
+   # Ignore configuration files
+   .env
+   config.js
+   config.json
