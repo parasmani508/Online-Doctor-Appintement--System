@@ -21,7 +21,7 @@ const App = () => {
         const response = await axios.get(
           "https://online-doctor-appintement-system-1.onrender.com/api/v1/user/patient/me",
           { withCredentials: true }
-        );
+        );  
         setisAuthenticated(true);
         setUser(response.data.user);
       } catch (error) {
