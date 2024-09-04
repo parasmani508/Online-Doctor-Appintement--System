@@ -31,7 +31,7 @@ const AppointementForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const {data} = await axios.get(
-        "http://localhost:4000/api/v1/user/doctors",
+        "https://online-doctor-appintement-system-1.onrender.com/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -44,7 +44,7 @@ const AppointementForm = () => {
     try {
       const hasbool = Boolean(hasVisited);
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/appointement/post",
+        "https://online-doctor-appintement-system-1.onrender.com/api/v1/appointement/post",
         {
           firstName,
           lastName,
