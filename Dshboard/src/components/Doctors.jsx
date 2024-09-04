@@ -13,7 +13,7 @@ const Doctors = () => {
     const fetchDoctors=async()=>
       {
           try {
-            const {data}=await axios.get("http://localhost:4000/api/v1/user/doctors",{withCredentials:true})
+            const {data}=await axios.get("https://online-doctor-appintement-system-1.onrender.com/api/v1/user/doctors",{withCredentials:true})
             setDoctors(data.doctors);
           } catch (error) 
           {
