@@ -14,7 +14,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/appointement/getall",
+          "https://online-doctor-appintement-system-1.onrender.com/api/v1/appointement/getall",
           { withCredentials: true }
         );
         setAppointements(data.appointements);
@@ -30,7 +30,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointementId, status) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/appointement/update/${appointementId}`,
+        `https://online-doctor-appintement-system-1.onrender.com/api/v1/appointement/update/${appointementId}`,
         { status },
         { withCredentials: true }
       );
