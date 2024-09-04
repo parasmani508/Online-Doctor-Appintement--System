@@ -11,7 +11,7 @@ const{isAuthenticated}=useContext(Context);
       {
         try 
         {
-          const {data}=await axios.get("http://localhost:4000/api/v1/message/getall",{withCredentials:true});
+          const {data}=await axios.get("https://online-doctor-appintement-system-1.onrender.com/api/v1/message/getall",{withCredentials:true});
           setMessages(data.messages)
           
         }
